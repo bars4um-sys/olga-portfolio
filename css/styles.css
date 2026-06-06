@@ -845,6 +845,7 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    align-items: start;
 }
 
 .portfolio-item {
@@ -865,6 +866,7 @@ button {
     overflow: hidden;
     cursor: pointer;
     background: var(--color-bg);
+    aspect-ratio: 4 / 3;
 }
 
 .portfolio-card::before {
@@ -890,6 +892,10 @@ button {
 
 .portfolio-card:hover img {
     transform: scale(1.05);
+}
+
+.portfolio-card--tall {
+    aspect-ratio: 3 / 4;
 }
 
 .portfolio-overlay {
@@ -927,11 +933,6 @@ button {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Masonry offsets */
-.portfolio-item:nth-child(2) { transform: translateY(30px); }
-.portfolio-item:nth-child(5) { transform: translateY(-20px); }
-.portfolio-item:nth-child(8) { transform: translateY(40px); }
-.portfolio-item:nth-child(11) { transform: translateY(-15px); }
 
 /* ============================================
    WRITING

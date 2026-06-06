@@ -147,10 +147,9 @@
         });
     });
 
-    // Store original transforms
+    // Reset any stale transforms — all items should be flat now
     document.querySelectorAll('.portfolio-item').forEach(item => {
-        const style = window.getComputedStyle(item);
-        item.dataset.originalTransform = style.transform;
+        item.dataset.originalTransform = '';
     });
 
     // ============================================
