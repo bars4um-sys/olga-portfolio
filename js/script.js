@@ -127,9 +127,11 @@
             const items = portfolioGrid.querySelectorAll('.portfolio-item');
             items.forEach(item => {
                 const category = item.dataset.category;
-                if (filter === 'all' || category === filter) {
+                const show = (filter === 'all' && category === 'all') ||
+                             (filter !== 'all' && category === filter);
+
+                if (show) {
                     item.classList.remove('hidden');
-                    // Small delay for stagger effect
                     setTimeout(() => {
                         item.style.opacity = '1';
                         item.style.transform = item.dataset.originalTransform || '';
@@ -344,5 +346,36 @@
             }
         }
     }
+
+    // ============================================
+    // Writing Accordion
+    // ============================================
+
+    const writingItems = document.querySelectorAll('.writing-item');
+
+    writingItems.forEach(item => {
+        const header = item.querySelector('.writing-header');
+        const toggle = item.querySelector('.writing-toggle');
+
+        function toggleItem() {
+            const isOpen = item.classList.contains('open');
+
+            // Close all other items
+            writingItems.forEach(other => {
+                if (other !== item) {
+                    other.classList.remove('open');
+                    const otherToggle = other.querySelector('.writing-toggle');
+                    if (otherToggle) otherToggle.setAttribute('aria-label', 'Раскрыть текст');
+                }
+            });
+
+            // Toggle current
+            item.classList.toggle('open');
+            toggle.setAttribute('aria-label', isOpen ? 'Раскрыть текст' : 'Свернуть текст');
+        }
+
+        if (header) header.addEventListener('click', toggleItem);
+        if (toggle) toggle.addEventListener('click', (e) => { e.stopPropagation(); toggleItem(); });
+    });
 
 })();
