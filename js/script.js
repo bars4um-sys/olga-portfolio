@@ -115,6 +115,23 @@
     // Portfolio Filter
     // ============================================
 
+    function applyFilter(filter) {
+        const items = portfolioGrid.querySelectorAll('.portfolio-item');
+        items.forEach(item => {
+            const category = item.dataset.category;
+            const show = (filter === 'all' && category === 'all') ||
+                         (filter !== 'all' && category === filter);
+
+            if (show) {
+                item.classList.remove('hidden');
+                item.style.display = '';
+            } else {
+                item.classList.add('hidden');
+                item.style.display = 'none';
+            }
+        });
+    }
+
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const filter = btn.dataset.filter;
@@ -123,23 +140,12 @@
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
-            // Filter items
-            const items = portfolioGrid.querySelectorAll('.portfolio-item');
-            items.forEach(item => {
-                const category = item.dataset.category;
-                const show = (filter === 'all' && category === 'all') ||
-                             (filter !== 'all' && category === filter);
-
-                if (show) {
-                    item.classList.remove('hidden');
-                    item.style.display = '';
-                } else {
-                    item.classList.add('hidden');
-                    item.style.display = 'none';
-                }
-            });
+            applyFilter(filter);
         });
     });
+
+    // Auto-apply "all" filter on page load
+    applyFilter('all');
 
     // Reset any stale transforms — all items should be flat now
     document.querySelectorAll('.portfolio-item').forEach(item => {
