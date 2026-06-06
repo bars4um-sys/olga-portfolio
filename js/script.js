@@ -132,16 +132,8 @@
 
                 if (show) {
                     item.classList.remove('hidden');
-                    setTimeout(() => {
-                        item.style.opacity = '1';
-                        item.style.transform = item.dataset.originalTransform || '';
-                    }, 50);
                 } else {
-                    item.style.opacity = '0';
-                    item.style.transform = 'scale(0.9)';
-                    setTimeout(() => {
-                        item.classList.add('hidden');
-                    }, 400);
+                    item.classList.add('hidden');
                 }
             });
         });
