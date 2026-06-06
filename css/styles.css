@@ -848,14 +848,8 @@ button {
     align-items: start;
 }
 
-.portfolio-item {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
 .portfolio-item.hidden {
-    display: none;
+    display: none !important;
 }
 
 .portfolio-card {

@@ -132,8 +132,10 @@
 
                 if (show) {
                     item.classList.remove('hidden');
+                    item.style.display = '';
                 } else {
                     item.classList.add('hidden');
+                    item.style.display = 'none';
                 }
             });
         });
