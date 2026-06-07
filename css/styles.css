@@ -1572,25 +1572,25 @@ button {
 }
 
 .organic-blob--hero-1 {
-    width: 420px;
-    height: 420px;
+    width: 280px;
+    height: 280px;
     background: var(--color-accent-2);
     border-radius: 60% 40% 50% 70% / 50% 60% 40% 50%;
-    top: 8%;
-    right: -80px;
-    filter: blur(60px);
-    opacity: 0.3;
+    top: 10%;
+    right: 5%;
+    filter: blur(28px);
+    opacity: 0.5;
 }
 
 .organic-blob--hero-2 {
-    width: 320px;
-    height: 320px;
+    width: 220px;
+    height: 220px;
     background: var(--color-accent-2);
     border-radius: 40% 70% 60% 30% / 60% 50% 70% 50%;
-    bottom: 5%;
-    right: -60px;
-    filter: blur(50px);
-    opacity: 0.25;
+    bottom: 12%;
+    right: 12%;
+    filter: blur(24px);
+    opacity: 0.45;
 }
 
 .vertical-deco {
