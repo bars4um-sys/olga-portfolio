@@ -1631,51 +1631,36 @@ button {
 }
 
 /* ============================================
-   DECORATIVE BLOBS — soft cloud-like shapes
+   DECORATIVE BLOBS — complex organic shapes
    ============================================ */
 
 .deco-blob {
     position: absolute;
     pointer-events: none;
     z-index: 0;
-    background: var(--color-accent-2);
-    opacity: 0.25;
+    opacity: 0.18;
 }
 
-.deco-blob--left {
-    left: -40px;
-    top: 8%;
-    width: 140px;
-    height: 70%;
-    border-radius: 70% 40% 60% 50% / 50% 60% 40% 70%;
-    filter: blur(2px);
-}
+/* Colors */
+.deco-blob--blue { background: var(--color-accent-2); }
+.deco-blob--pink { background: var(--color-accent-4); opacity: 0.14; }
+.deco-blob--yellow { background: var(--color-accent-3); opacity: 0.12; }
 
-.deco-blob--right {
-    right: -30px;
-    top: 12%;
-    width: 120px;
-    height: 60%;
-    border-radius: 40% 70% 50% 60% / 60% 50% 70% 40%;
-    filter: blur(2px);
-}
+/* Softness */
+.deco-blob--soft { filter: blur(3px); }
+.deco-blob--hard { filter: blur(1px); }
 
-.deco-blob--sm {
-    width: 90px;
-    height: 25%;
-    border-radius: 60% 40% 50% 70% / 50% 60% 40% 50%;
-    filter: blur(1px);
-}
-
-.deco-blob--sm.deco-blob--left {
-    left: -20px;
-    top: 30%;
-}
-
-.deco-blob--sm.deco-blob--right {
-    right: -15px;
-    top: 55%;
-}
+/* Complex organic shapes */
+.deco-blob--s1 { border-radius: 65% 35% 55% 45% / 55% 45% 60% 40%; transform: rotate(12deg); }
+.deco-blob--s2 { border-radius: 40% 60% 45% 55% / 60% 40% 55% 45%; transform: rotate(-18deg); }
+.deco-blob--s3 { border-radius: 55% 45% 65% 35% / 45% 55% 35% 65%; transform: rotate(25deg); }
+.deco-blob--s4 { border-radius: 35% 65% 55% 45% / 65% 35% 45% 55%; transform: rotate(-10deg); }
+.deco-blob--s5 { border-radius: 60% 40% 50% 50% / 50% 50% 40% 60%; transform: rotate(30deg); }
+.deco-blob--s6 { border-radius: 45% 55% 40% 60% / 55% 45% 60% 40%; transform: rotate(-22deg); }
+.deco-blob--s7 { border-radius: 70% 30% 60% 40% / 40% 60% 30% 70%; transform: rotate(8deg); }
+.deco-blob--s8 { border-radius: 50% 50% 70% 30% / 30% 70% 50% 50%; transform: rotate(-28deg); }
+.deco-blob--s9 { border-radius: 30% 70% 50% 50% / 50% 50% 70% 30%; transform: rotate(15deg); }
+.deco-blob--s10 { border-radius: 60% 40% 30% 70% / 40% 60% 70% 30%; transform: rotate(-5deg); }
 
 /* ============================================
    DECORATIVE SCRIPT — French quotes
