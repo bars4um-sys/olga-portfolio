@@ -583,8 +583,10 @@ button {
 }
 
 .section-header--fullwidth {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 8px;
+    align-items: baseline;
 }
 
 .section-header--fullwidth .section-line {
@@ -592,6 +594,7 @@ button {
     height: 1px;
     background: var(--color-border);
     margin-top: 8px;
+    flex-basis: 100%;
 }
 
 .section-header--center {
@@ -1934,6 +1937,12 @@ button {
 
     .section-header--center {
         align-items: center;
+    }
+
+    .section-header--fullwidth {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
     }
 
     .skills-layout {
