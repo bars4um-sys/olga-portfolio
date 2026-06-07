@@ -384,8 +384,8 @@ button {
     background: var(--color-accent);
     opacity: 0.15;
     bottom: 5%;
-    left: -80px;
-    transform: rotate(-12deg);
+    right: -80px;
+    transform: rotate(12deg);
     pointer-events: none;
     transition: transform 0.1s linear;
 }
@@ -393,11 +393,29 @@ button {
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 900px;
+    max-width: var(--container);
     width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.hero-photo {
+    flex: 0 0 38%;
+    max-width: 380px;
+    position: relative;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
 }
 
 .hero-text {
+    flex: 1;
     position: relative;
 }
 
@@ -1628,6 +1646,17 @@ button {
         display: none;
     }
 
+    .hero-content {
+        flex-direction: column;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .hero-photo {
+        order: -1;
+        max-width: 280px;
+    }
+
     .hero-sidebar {
         display: none;
     }
@@ -1673,6 +1702,10 @@ button {
     .hero {
         padding-top: 100px;
         padding-bottom: 60px;
+    }
+
+    .hero-photo {
+        max-width: 220px;
     }
 
     .hero-name {
