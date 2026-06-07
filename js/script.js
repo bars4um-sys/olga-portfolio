@@ -199,14 +199,14 @@
         lightboxImg.alt = img.alt;
     }
 
-    // Open lightbox on portfolio card click
-    document.querySelectorAll('.portfolio-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const img = card.querySelector('img');
-            if (img) {
-                openLightbox(img.src, img.alt);
-            }
-        });
+    // Open lightbox on portfolio card click (event delegation)
+    portfolioGrid.addEventListener('click', (e) => {
+        const card = e.target.closest('.portfolio-card');
+        if (!card) return;
+        const img = card.querySelector('img');
+        if (img && img.src) {
+            openLightbox(img.src, img.alt);
+        }
     });
 
     // Lightbox controls
