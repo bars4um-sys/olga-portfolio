@@ -1689,6 +1689,57 @@ button {
 }
 
 /* ============================================
+   DECORATIVE NATURE — line-art clouds/leaves/flowers
+   ============================================ */
+
+.deco-nature {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.22;
+}
+
+.deco-nature svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.deco-nature path,
+.deco-nature circle,
+.deco-nature line,
+.deco-nature polyline {
+    fill: none;
+    stroke: var(--color-accent-2);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+}
+
+.deco-nature--pink path,
+.deco-nature--pink circle,
+.deco-nature--pink line,
+.deco-nature--pink polyline {
+    stroke: var(--color-accent-4);
+}
+
+.deco-nature--red path,
+.deco-nature--red circle,
+.deco-nature--red line,
+.deco-nature--red polyline {
+    stroke: var(--color-accent);
+}
+
+.deco-nature--dark path,
+.deco-nature--dark circle,
+.deco-nature--dark line,
+.deco-nature--dark polyline {
+    stroke: var(--color-text);
+    opacity: 0.5;
+}
+
+/* ============================================
    RESPONSIVE
    ============================================ */
 
