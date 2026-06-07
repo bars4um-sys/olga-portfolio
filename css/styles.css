@@ -878,7 +878,11 @@ button {
     background: var(--color-bg);
     aspect-ratio: 4 / 3;
     touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(209, 67, 67, 0.25);
+}
+
+.portfolio-card:active {
+    transform: scale(0.98);
 }
 
 .portfolio-card::before {
@@ -894,7 +898,12 @@ button {
 
 .portfolio-card:hover::before {
     opacity: 1;
-    pointer-events: auto;
+}
+
+@media (hover: hover) {
+    .portfolio-card:hover::before {
+        pointer-events: auto;
+    }
 }
 
 .portfolio-card picture {
@@ -935,7 +944,12 @@ button {
 .portfolio-card:hover .portfolio-overlay {
     opacity: 1;
     transform: translateY(0);
-    pointer-events: auto;
+}
+
+@media (hover: hover) {
+    .portfolio-card:hover .portfolio-overlay {
+        pointer-events: auto;
+    }
 }
 
 .portfolio-title {
