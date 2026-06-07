@@ -373,31 +373,7 @@ button {
     pointer-events: none;
 }
 
-.hero-accent-circle {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: var(--color-accent-2);
-    opacity: 0.35;
-    top: 10%;
-    right: -100px;
-    pointer-events: none;
-    transition: transform 0.1s linear;
-}
 
-.hero-accent-rect {
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    background: var(--color-accent);
-    opacity: 0.15;
-    bottom: 5%;
-    right: -80px;
-    transform: rotate(12deg);
-    pointer-events: none;
-    transition: transform 0.1s linear;
-}
 
 .hero-content {
     position: relative;
@@ -415,6 +391,7 @@ button {
     max-width: 380px;
     position: relative;
     filter: drop-shadow(0 12px 32px rgba(0,0,0,0.12));
+    margin-left: 48px;
 }
 
 .hero-photo::before {
@@ -1392,6 +1369,13 @@ button {
     color: var(--color-text);
 }
 
+.contact-buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -1587,6 +1571,28 @@ button {
     opacity: 0.25;
 }
 
+.organic-blob--hero-1 {
+    width: 420px;
+    height: 420px;
+    background: var(--color-accent-2);
+    border-radius: 60% 40% 50% 70% / 50% 60% 40% 50%;
+    top: 8%;
+    right: -80px;
+    filter: blur(60px);
+    opacity: 0.3;
+}
+
+.organic-blob--hero-2 {
+    width: 320px;
+    height: 320px;
+    background: var(--color-accent-2);
+    border-radius: 40% 70% 60% 30% / 60% 50% 70% 50%;
+    bottom: 5%;
+    right: -60px;
+    filter: blur(50px);
+    opacity: 0.25;
+}
+
 .vertical-deco {
     position: absolute;
     font-family: var(--font-heading);
@@ -1700,53 +1706,6 @@ button {
    DECORATIVE NATURE — line-art clouds/leaves/flowers
    ============================================ */
 
-.deco-nature {
-    position: absolute;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.22;
-}
-
-.deco-nature svg {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-}
-
-.deco-nature path,
-.deco-nature circle,
-.deco-nature line,
-.deco-nature polyline {
-    fill: none;
-    stroke: var(--color-accent-2);
-    stroke-width: 1.8;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vector-effect: non-scaling-stroke;
-}
-
-.deco-nature--pink path,
-.deco-nature--pink circle,
-.deco-nature--pink line,
-.deco-nature--pink polyline {
-    stroke: var(--color-accent-4);
-}
-
-.deco-nature--red path,
-.deco-nature--red circle,
-.deco-nature--red line,
-.deco-nature--red polyline {
-    stroke: var(--color-accent);
-}
-
-.deco-nature--dark path,
-.deco-nature--dark circle,
-.deco-nature--dark line,
-.deco-nature--dark polyline {
-    stroke: var(--color-text);
-    opacity: 0.5;
-}
-
 /* ============================================
    RESPONSIVE
    ============================================ */
@@ -1844,81 +1803,6 @@ button {
         font-size: clamp(42px, 12vw, 72px);
     }
 
-    .hero-accent-circle {
-        width: 300px;
-        height: 300px;
-        opacity: 0.25;
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
-    .about-divider {
-        display: none;
-    }
-
-    .timeline {
-        padding-left: 0;
-    }
-
-    .timeline-line {
-        display: none;
-    }
-
-    .timeline-dot {
-        display: none;
-    }
-
-    .timeline-card {
-        border-left: 3px solid var(--color-accent-2);
-    }
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio-item:nth-child(n) {
-        transform: none;
-    }
-
-    .presentations-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .writing-header {
-        grid-template-columns: 1fr auto;
-        gap: 16px;
-    }
-
-    .writing-marker {
-        display: none;
-    }
-
-    .writing-body {
-        padding-left: 0;
-    }
-
-    .writing-frame {
-        height: 350px;
-    }
-
-    .writing-excerpt {
-        display: none;
-    }
-
-    .footer-inner {
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-    }
-
-    .lightbox-prev,
-    .lightbox-next {
-        display: none;
-    }
-}
 
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
