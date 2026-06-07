@@ -1077,7 +1077,7 @@ button {
 }
 
 .writing-item.open .writing-body {
-    max-height: 800px;
+    max-height: 5000px;
     opacity: 1;
     padding-top: 20px;
     padding-bottom: 10px;
