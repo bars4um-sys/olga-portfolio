@@ -1727,6 +1727,19 @@ button {
         gap: 48px;
     }
 
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about-divider {
+        display: none;
+    }
+
+    .about-tags {
+        justify-content: center;
+    }
+
     .hero-deco {
         display: none;
     }
@@ -1740,6 +1753,7 @@ button {
     .hero-photo {
         order: -1;
         max-width: 280px;
+        margin-left: 0;
     }
 
     .hero-photo::before {
@@ -1752,6 +1766,10 @@ button {
 }
 
 @media (max-width: 768px) {
+    :root {
+        --gutter: 16px;
+    }
+
     .nav-links {
         position: fixed;
         top: 0;
@@ -1800,6 +1818,147 @@ button {
     .hero-name {
         font-size: clamp(42px, 12vw, 72px);
     }
+
+    .about {
+        padding: 80px 0;
+    }
+
+    .about-lead {
+        font-size: clamp(20px, 5vw, 25px);
+        line-height: 1.15;
+    }
+
+    .about-tags {
+        margin-top: 32px;
+        padding-top: 24px;
+    }
+
+    .experience {
+        padding: 80px 0;
+    }
+
+    .portfolio {
+        padding: 80px 0;
+    }
+
+    .writing {
+        padding: 80px 0;
+    }
+
+    .presentations {
+        padding: 80px 0;
+    }
+
+    .skills {
+        padding: 80px 0;
+    }
+
+    .contact {
+        padding: 80px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about-divider {
+        display: none;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .presentations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .writing-header {
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+    }
+
+    .writing-marker {
+        display: none;
+    }
+
+    .writing-body {
+        padding-left: 0;
+    }
+
+    .timeline {
+        padding-left: 24px;
+    }
+
+    .timeline-dot {
+        left: -28px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .hero-photo {
+        margin-left: 0;
+    }
+
+    .contact-buttons {
+        justify-content: center;
+    }
+
+    .contact-title {
+        text-align: center;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    .section-header--center {
+        align-items: center;
+    }
+
+    .skills-layout {
+        gap: 32px;
+    }
+
+    .skill-bar {
+        grid-template-columns: 90px 1fr 50px;
+        gap: 8px;
+    }
+
+    .skill-bar-label {
+        font-size: 12px;
+    }
+
+    .portfolio-filter {
+        justify-content: center;
+    }
+
+    .timeline-company {
+        font-size: 26px;
+    }
+
+    .portfolio-title {
+        font-size: 18px;
+    }
+
+    .presentation-title {
+        font-size: 18px;
+    }
+
+    .deco-strokes,
+    .vertical-deco,
+    .deco-script {
+        display: none;
+    }
+}
 
 
 @media (prefers-reduced-motion: reduce) {
