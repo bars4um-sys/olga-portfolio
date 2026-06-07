@@ -633,6 +633,7 @@ button {
    ============================================ */
 
 .about {
+    position: relative;
     background: var(--color-bg-alt);
     padding: 120px 0;
 }
@@ -957,6 +958,7 @@ button {
    ============================================ */
 
 .writing {
+    position: relative;
     background: var(--color-bg);
     padding: 120px 0;
 }
@@ -1629,43 +1631,50 @@ button {
 }
 
 /* ============================================
-   DECORATIVE STROKES — organic line blobs
+   DECORATIVE BLOBS — soft cloud-like shapes
    ============================================ */
 
-.deco-strokes {
+.deco-blob {
     position: absolute;
     pointer-events: none;
     z-index: 0;
-    opacity: 0.55;
+    background: var(--color-accent-2);
+    opacity: 0.25;
 }
 
-.deco-strokes svg {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
+.deco-blob--left {
+    left: -40px;
+    top: 8%;
+    width: 140px;
+    height: 70%;
+    border-radius: 70% 40% 60% 50% / 50% 60% 40% 70%;
+    filter: blur(2px);
 }
 
-.deco-strokes--left {
-    left: 0;
-    top: 5%;
-    width: 180px;
-    height: 90%;
+.deco-blob--right {
+    right: -30px;
+    top: 12%;
+    width: 120px;
+    height: 60%;
+    border-radius: 40% 70% 50% 60% / 60% 50% 70% 40%;
+    filter: blur(2px);
 }
 
-.deco-strokes--right {
-    right: 0;
-    top: 10%;
-    width: 160px;
-    height: 80%;
+.deco-blob--sm {
+    width: 90px;
+    height: 25%;
+    border-radius: 60% 40% 50% 70% / 50% 60% 40% 50%;
+    filter: blur(1px);
 }
 
-.deco-strokes path {
-    fill: none;
-    stroke: var(--color-accent-2);
-    stroke-width: 2.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vector-effect: non-scaling-stroke;
+.deco-blob--sm.deco-blob--left {
+    left: -20px;
+    top: 30%;
+}
+
+.deco-blob--sm.deco-blob--right {
+    right: -15px;
+    top: 55%;
 }
 
 /* ============================================
