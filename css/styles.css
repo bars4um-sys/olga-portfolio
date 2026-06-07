@@ -980,11 +980,11 @@ button {
     display: inline-block;
     font-family: var(--font-body);
     font-weight: 700;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: #fff;
-    padding: 4px 12px;
+    padding: 3px 10px;
     background: var(--color-accent-2);
     border-radius: 2px;
     width: fit-content;
