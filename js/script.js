@@ -119,7 +119,8 @@
         const items = portfolioGrid.querySelectorAll('.portfolio-item');
         items.forEach(item => {
             const category = item.dataset.category;
-            const show = filter === 'all' || category === filter;
+            const show = (filter === 'all' && category === 'all') ||
+                         (filter !== 'all' && category === filter);
 
             if (show) {
                 item.classList.remove('hidden');
