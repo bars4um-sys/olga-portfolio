@@ -779,14 +779,14 @@ button {
 .timeline-company {
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: 30px;
+    font-size: 34px;
     margin-bottom: 4px;
 }
 
 .timeline-role {
     font-family: var(--font-body);
     font-weight: 500;
-    font-size: 17px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--color-text-secondary);
