@@ -874,6 +874,8 @@ button {
     cursor: pointer;
     background: var(--color-bg);
     aspect-ratio: 4 / 3;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .portfolio-card::before {
@@ -916,11 +918,13 @@ button {
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
 }
 
 .portfolio-card:hover .portfolio-overlay {
     opacity: 1;
     transform: translateY(0);
+    pointer-events: auto;
 }
 
 .portfolio-title {

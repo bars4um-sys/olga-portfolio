@@ -171,8 +171,10 @@
         lightbox.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
 
-        // Find current index
-        currentImageIndex = visibleImages.findIndex(img => img.src === imgSrc);
+        // Find current index by comparing end of URL path
+        // (handles both absolute and relative URLs)
+        const srcName = imgSrc.split('/').pop();
+        currentImageIndex = visibleImages.findIndex(img => img.src.split('/').pop() === srcName);
     }
 
     function closeLightbox() {
