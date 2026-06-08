@@ -1,0 +1,30 @@
+title: "Ольга Чумаченко — Редактор · Дизайнер · Продакт"
+description: "Портфолио Ольги Чумаченко — редактора, дизайнера и продакта из Москвы. Тексты, дизайн печатной продукции, верстка."
+author: "Ольга Чумаченко"
+
+# Деплой: GitHub Pages, репо bars4um-sys/olga-portfolio
+# По умолчанию сайт откроется на https://bars4um-sys.github.io/olga-portfolio/
+# Если переезжаешь на кастомный домен — раскомментируй baseurl и url
+baseurl: ""
+url: "https://bars4um-sys.github.io"
+
+# Не собирать эти файлы в _site (они не нужны в продакшене)
+exclude:
+  - Архив
+  - Правки_1
+  - _scripts
+  - Gemfile
+  - Gemfile.lock
+  - .DS_Store
+  - node_modules
+  - vendor
+  - .bundle
+  - .gitignore
+  - README.md
+
+# Без плагинов — нам не нужны jekyll-paginate, jekyll-seo-tag и т.д.
+plugins: []
+
+# Жидкость: trim_whitespace снимает лишние переносы из Liquid-тегов
+liquid:
+  error_mode: warn

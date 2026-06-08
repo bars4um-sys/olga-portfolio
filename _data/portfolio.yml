@@ -1,0 +1,200 @@
+# Автогенерация: _scripts/gen_portfolio.rb
+# Источник: images/portfolio/*/. Правь маппинг в CATEGORY_MAP, не тут.
+# Пересборка: ruby _scripts/gen_portfolio.rb
+
+# 1. Барометр (2 шт.)
+- folder: "Барометр"
+  category: poster
+  category_label: "Постер"
+  title: "Барометр"
+  items:
+    - src: "images/portfolio/Барометр/tih_1.webp"
+      fallback: "images/portfolio/Барометр/tih_1.jpg"
+      alt: "Барометр — иллюстрация"
+    - src: "images/portfolio/Барометр/tih_2.webp"
+      fallback: "images/portfolio/Барометр/tih_2.jpg"
+      alt: "Барометр — иллюстрация"
+
+# 2. Греция (3 шт.)
+- folder: "Греция"
+  category: book
+  category_label: "Книга"
+  title: "Греция"
+  items:
+    - src: "images/portfolio/Греция/zabj_1.webp"
+      fallback: "images/portfolio/Греция/zabj_1.jpg"
+      alt: "Греция — верстка"
+    - src: "images/portfolio/Греция/zabj_2.webp"
+      fallback: "images/portfolio/Греция/zabj_2.jpg"
+      alt: "Греция — разворот"
+    - src: "images/portfolio/Греция/zabj_3.webp"
+      fallback: "images/portfolio/Греция/zabj_3.jpg"
+      alt: "Греция — страница"
+
+# 3. Диплом (2 шт.)
+- folder: "Диплом"
+  category: book
+  category_label: "Книга"
+  title: "Диплом «Why»"
+  items:
+    - src: "images/portfolio/Диплом/мокап обложки.webp"
+      fallback: "images/portfolio/Диплом/мокап обложки.jpg"
+      alt: "Диплом Why — обложка"
+    - src: "images/portfolio/Диплом/огб 1.webp"
+      fallback: "images/portfolio/Диплом/огб 1.jpg"
+      alt: "Диплом Why — страница"
+
+# 4. Допы (6 шт.)
+- folder: "Допы"
+  category: dop
+  items:
+    - src: "images/portfolio/Допы/043a8a24-267d-4263-9ec9-6a0763a09e93.webp"
+      fallback: "images/portfolio/Допы/043a8a24-267d-4263-9ec9-6a0763a09e93.jpeg"
+      alt: "Допы — 043a8a24-267d-4263-9ec9-6a0763a09e93"
+      title: "Типографический зин"
+      label: "Зин"
+    - src: "images/portfolio/Допы/1e10581d-e348-4a7e-b94e-f13a7638e4e3.webp"
+      fallback: "images/portfolio/Допы/1e10581d-e348-4a7e-b94e-f13a7638e4e3.jpeg"
+      alt: "Допы — 1e10581d-e348-4a7e-b94e-f13a7638e4e3"
+      title: "Книга «Why»"
+      label: "Книга"
+    - src: "images/portfolio/Допы/20eaef2b-7ebf-4446-bf69-744dd80ec6ae.webp"
+      fallback: "images/portfolio/Допы/20eaef2b-7ebf-4446-bf69-744dd80ec6ae.jpeg"
+      alt: "Допы — 20eaef2b-7ebf-4446-bf69-744dd80ec6ae"
+      title: "Геометрический постер"
+      label: "Постер"
+    - src: "images/portfolio/Допы/2bfd5bd6-d253-47d5-a577-a040cac17675.webp"
+      fallback: "images/portfolio/Допы/2bfd5bd6-d253-47d5-a577-a040cac17675.jpeg"
+      alt: "Допы — 2bfd5bd6-d253-47d5-a577-a040cac17675"
+      title: "Акварельный разворот"
+      label: "Иллюстрация"
+    - src: "images/portfolio/Допы/6fa98969-cd1c-44e5-bcc0-79feea69ad25.webp"
+      fallback: "images/portfolio/Допы/6fa98969-cd1c-44e5-bcc0-79feea69ad25.jpeg"
+      alt: "Допы — 6fa98969-cd1c-44e5-bcc0-79feea69ad25"
+      title: "Руки с букетом"
+      label: "Постер"
+    - src: "images/portfolio/Допы/e395bad5-4754-4ce0-a034-416b27cf812d.webp"
+      fallback: "images/portfolio/Допы/e395bad5-4754-4ce0-a034-416b27cf812d.jpeg"
+      alt: "Допы — e395bad5-4754-4ce0-a034-416b27cf812d"
+      title: "Brie Light"
+      label: "Постер"
+
+# 5. Зеленый журнал (4 шт.)
+- folder: "Зеленый журнал"
+  category: journal
+  category_label: "Журнал"
+  title: "Зелёный журнал"
+  items:
+    - src: "images/portfolio/Зеленый журнал/golf.webp"
+      fallback: "images/portfolio/Зеленый журнал/golf.jpg"
+      alt: "Зелёный журнал — статья"
+    - src: "images/portfolio/Зеленый журнал/jour_1.webp"
+      fallback: "images/portfolio/Зеленый журнал/jour_1.jpg"
+      alt: "Зелёный журнал — разворот"
+    - src: "images/portfolio/Зеленый журнал/jour_2.webp"
+      fallback: "images/portfolio/Зеленый журнал/jour_2.jpg"
+      alt: "Зелёный журнал — страница"
+    - src: "images/portfolio/Зеленый журнал/mag.webp"
+      fallback: "images/portfolio/Зеленый журнал/mag.jpg"
+      alt: "Зелёный журнал — разворот"
+
+# 6. Зин (5 шт.)
+- folder: "Зин"
+  category: zine
+  category_label: "Зин"
+  title: "Drink Me"
+  items:
+    - src: "images/portfolio/Зин/zin_1.webp"
+      fallback: "images/portfolio/Зин/zin_1.jpg"
+      alt: "Зин Drink Me — обложка"
+    - src: "images/portfolio/Зин/zin_2.webp"
+      fallback: "images/portfolio/Зин/zin_2.jpg"
+      alt: "Зин Drink Me — страница"
+    - src: "images/portfolio/Зин/zin_3.webp"
+      fallback: "images/portfolio/Зин/zin_3.jpg"
+      alt: "Зин Drink Me — разворот"
+    - src: "images/portfolio/Зин/zin_4.webp"
+      fallback: "images/portfolio/Зин/zin_4.jpg"
+      alt: "Зин Drink Me — разворот"
+    - src: "images/portfolio/Зин/zin_5.webp"
+      fallback: "images/portfolio/Зин/zin_5.jpg"
+      alt: "Зин Drink Me — страница"
+
+# 7. Меридианы (5 шт.)
+- folder: "Меридианы"
+  category: book
+  category_label: "Книга"
+  title: "Меридианы"
+  items:
+    - src: "images/portfolio/Меридианы/mer_1.webp"
+      fallback: "images/portfolio/Меридианы/mer_1.jpg"
+      alt: "Меридианы — разворот"
+    - src: "images/portfolio/Меридианы/mer_2.webp"
+      fallback: "images/portfolio/Меридианы/mer_2.jpg"
+      alt: "Меридианы — страница"
+    - src: "images/portfolio/Меридианы/mer_3.webp"
+      fallback: "images/portfolio/Меридианы/mer_3.jpg"
+      alt: "Меридианы — разворот"
+    - src: "images/portfolio/Меридианы/oblmer.webp"
+      fallback: "images/portfolio/Меридианы/oblmer.jpg"
+      alt: "Меридианы — обложка"
+    - src: "images/portfolio/Меридианы/obrmer.webp"
+      fallback: "images/portfolio/Меридианы/obrmer.jpg"
+      alt: "Меридианы — оборот"
+
+# 8. Постеры (8 шт.)
+- folder: "Постеры"
+  category: poster
+  category_label: "Постер"
+  items:
+    - src: "images/portfolio/Постеры/poster_1.webp"
+      fallback: "images/portfolio/Постеры/poster_1.jpg"
+      alt: "Постер — типографика"
+    - src: "images/portfolio/Постеры/poster_2.webp"
+      fallback: "images/portfolio/Постеры/poster_2.jpg"
+      alt: "Постер — дизайн"
+    - src: "images/portfolio/Постеры/poster_3.webp"
+      fallback: "images/portfolio/Постеры/poster_3.jpg"
+      alt: "Постер — кино"
+    - src: "images/portfolio/Постеры/poster_4.webp"
+      fallback: "images/portfolio/Постеры/poster_4.jpg"
+      alt: "Постер — серия"
+    - src: "images/portfolio/Постеры/poster_5.webp"
+      fallback: "images/portfolio/Постеры/poster_5.jpg"
+      alt: "Серия постеров"
+    - src: "images/portfolio/Постеры/poster_6.webp"
+      fallback: "images/portfolio/Постеры/poster_6.jpg"
+      alt: "Постер — дизайн"
+    - src: "images/portfolio/Постеры/poster_7.webp"
+      fallback: "images/portfolio/Постеры/poster_7.jpg"
+      alt: "Постер — типографика"
+    - src: "images/portfolio/Постеры/poster_8.webp"
+      fallback: "images/portfolio/Постеры/poster_8.jpg"
+      alt: "Постер — иллюстрация"
+
+# 9. Сириус (6 шт.)
+- folder: "Сириус"
+  category: merch
+  category_label: "Мерч"
+  title: "Сириус"
+  tall: true
+  items:
+    - src: "images/portfolio/Сириус/Tshirt.webp"
+      fallback: "images/portfolio/Сириус/Tshirt.jpg"
+      alt: "Сириус — футболка"
+    - src: "images/portfolio/Сириус/book.webp"
+      fallback: "images/portfolio/Сириус/book.jpg"
+      alt: "Сириус — книга"
+    - src: "images/portfolio/Сириус/korob.webp"
+      fallback: "images/portfolio/Сириус/korob.png"
+      alt: "Сириус — коробка"
+    - src: "images/portfolio/Сириус/note.webp"
+      fallback: "images/portfolio/Сириус/note.jpg"
+      alt: "Сириус — записная книжка"
+    - src: "images/portfolio/Сириус/obl.webp"
+      fallback: "images/portfolio/Сириус/obl.jpg"
+      alt: "Сириус — блокнот"
+    - src: "images/portfolio/Сириус/shopper.webp"
+      fallback: "images/portfolio/Сириус/shopper.jpg"
+      alt: "Сириус — шоппер"
+

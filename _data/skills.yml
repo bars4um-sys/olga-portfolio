@@ -1,0 +1,64 @@
+# Навыки — рендерятся в _includes/sections/skills.html
+# Три блока: cloud (облако тегов), bars (языки), formats (форматы работы).
+
+cloud:
+  - tag: "Редактура"
+    size: xl
+  - tag: "Вёрстка"
+    size: xl
+  - tag: "Дизайн"
+    size: xl
+  - tag: "Корректура"
+    size: l
+  - tag: "Копирайтинг"
+    size: l
+  - tag: "Типографика"
+    size: l
+  - tag: "SMM"
+    size: l
+  - tag: "InDesign"
+    size: m
+  - tag: "Illustrator"
+    size: m
+  - tag: "Photoshop"
+    size: m
+  - tag: "SEO"
+    size: m
+  - tag: "Переводы"
+    size: m
+  - tag: "Canva"
+    size: s
+  - tag: "Tilda"
+    size: s
+  - tag: "E-mail рассылки"
+    size: s
+  - tag: "Субтитры"
+    size: s
+  - tag: "Локализация"
+    size: s
+  - tag: "Prepress"
+    size: s
+  - tag: "Контент-планы"
+    size: s
+  - tag: "Координация команд"
+    size: s
+
+bars:
+  - label: "Русский"
+    width: 100
+    level: "Родной"
+  - label: "Английский"
+    width: 65
+    level: "B1"
+  - label: "Французский"
+    width: 30
+    level: "A1"
+
+formats:
+  - "Книги: художественные, нон-фикшн, поэзия, сборники"
+  - "Журналы, газеты, зины, фото-книги"
+  - "Музыкальные альбомы и обложки"
+  - "Статьи, эссе, заметки, сценарии"
+  - "SMM-посты, push, e-mail рассылки"
+  - "Аннотации, пресс-релизы, презентации"
+  - "POSM, мерч, промо-материалы"

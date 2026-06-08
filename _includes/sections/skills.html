@@ -1,0 +1,41 @@
+<section class="skills" id="skills">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">06</span>
+            <h2 class="section-title">Навыки</h2>
+        </div>
+
+        <div class="skills-layout">
+            <div class="skills-cloud">
+                {% for s in site.data.skills.cloud %}
+                <span class="skill-tag skill-tag--{{ s.size }}">{{ s.tag }}</span>
+                {% endfor %}
+            </div>
+
+            <div class="skills-details">
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Языки</h3>
+                    {% for bar in site.data.skills.bars %}
+                    <div class="skill-bar">
+                        <span class="skill-bar-label">{{ bar.label }}</span>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:{{ bar.width }}%"></div></div>
+                        <span class="skill-bar-level">{{ bar.level }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="skills-group">
+                    <h3 class="skills-group-title">Форматы</h3>
+                    <ul class="skills-formats">
+                        {% for f in site.data.skills.formats %}
+                        <li>{{ f }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Torn Paper Divider -->
+<div class="torn-paper torn-paper--down"></div>

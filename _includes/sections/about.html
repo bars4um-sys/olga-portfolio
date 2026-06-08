@@ -1,0 +1,75 @@
+<section class="about" id="about">
+    <div class="organic-blob organic-blob--2"></div>
+    <span class="vertical-deco vertical-deco--left">Portfolio</span>
+
+    <!-- Decorative organic strokes — left -->
+    <div class="deco-strokes deco-strokes--left" aria-hidden="true">
+        <svg viewBox="0 0 200 800" preserveAspectRatio="none">
+            <path d="M60,0 C140,100 40,200 100,300 C160,400 60,500 120,600 C180,700 80,800 40,800" />
+            <path d="M20,80 C100,180 0,280 60,380 C120,480 20,580 80,680 C140,780 40,800 20,800" stroke-width="1.5" />
+            <path d="M100,40 C180,140 80,240 140,340 C200,440 100,540 60,640 C20,740 120,800 100,800" stroke-width="1.5" />
+        </svg>
+    </div>
+
+    <!-- Decorative organic strokes — right -->
+    <div class="deco-strokes deco-strokes--right" aria-hidden="true">
+        <svg viewBox="0 0 200 800" preserveAspectRatio="none">
+            <path d="M140,0 C60,100 160,200 100,300 C40,400 140,500 80,600 C20,700 120,800 140,800" />
+            <path d="M180,60 C100,160 200,260 140,360 C80,460 180,560 120,660 C60,760 160,800 180,800" stroke-width="1.5" />
+            <path d="M100,20 C20,120 120,220 60,320 C0,420 100,520 40,620 C-20,720 80,800 100,800" stroke-width="1.5" />
+        </svg>
+    </div>
+
+    <!-- Decorative French script -->
+    <span class="deco-script deco-script--md" style="position:absolute; left:6%; bottom:12%; transform:rotate(5deg);" aria-hidden="true">Créativité</span>
+
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">01</span>
+            <h2 class="section-title">Обо мне</h2>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-col about-col--bio">
+                <p class="about-lead">{{ site.data.about.bio_lead }}</p>
+                {% for p in site.data.about.bio %}
+                <p>{{ p }}</p>
+                {% endfor %}
+            </div>
+
+            <div class="about-divider"></div>
+
+            <div class="about-col about-col--details">
+                <div class="about-block">
+                    <h3 class="about-block-title">Образование</h3>
+                    <ul class="about-list">
+                        {% for item in site.data.about.education %}
+                        <li><strong>{{ item.title }}</strong> — {{ item.detail }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="about-block">
+                    <h3 class="about-block-title">Ключевые качества</h3>
+                    <ul class="about-list">
+                        {% for item in site.data.about.qualities %}
+                        <li><strong>{{ item.title }}:</strong> {{ item.detail }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="about-block">
+                    <h3 class="about-block-title">Формат работы</h3>
+                    <p>{{ site.data.about.format | newline_to_br }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-tags">
+            {% for tag in site.data.about.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Torn Paper Divider -->
+<div class="torn-paper torn-paper--up"></div>

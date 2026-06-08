@@ -2,3 +2,8 @@
 Правки_1
 images/portfolio_original/
 Архив/
+_site/
+.bundle/
+vendor/
+Gemfile.lock
+*.log

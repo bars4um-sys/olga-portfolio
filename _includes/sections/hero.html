@@ -1,0 +1,65 @@
+<section class="hero" id="hero">
+    <!-- SVG clip-path for torn-edge photo frame -->
+    <svg width="0" height="0" aria-hidden="true">
+        <defs>
+            <clipPath id="photo-torn" clipPathUnits="objectBoundingBox">
+                <path d="M0.02,0.00 C0.12,0.02 0.22,-0.01 0.32,0.01 C0.42,0.03 0.52,0.00 0.62,0.02 C0.72,0.04 0.82,0.01 0.92,0.03 C0.98,0.04 1.00,0.06 1.00,0.08 L1.00,0.18 C1.00,0.20 0.98,0.22 0.96,0.24 C0.98,0.26 1.00,0.28 1.00,0.30 L1.00,0.40 C1.00,0.42 0.98,0.44 0.96,0.46 C0.98,0.48 1.00,0.50 1.00,0.52 L1.00,0.62 C1.00,0.64 0.98,0.66 0.96,0.68 C0.98,0.70 1.00,0.72 1.00,0.74 L1.00,0.84 C1.00,0.86 0.98,0.88 0.96,0.90 C0.98,0.92 1.00,0.94 1.00,0.96 L1.00,0.98 C1.00,1.00 0.98,1.00 0.92,1.00 C0.82,0.99 0.72,1.01 0.62,0.99 C0.52,0.97 0.42,1.00 0.32,0.98 C0.22,0.96 0.12,0.99 0.02,0.97 C0.00,0.96 0.00,0.94 0.00,0.92 L0.00,0.82 C0.00,0.80 0.02,0.78 0.04,0.76 C0.02,0.74 0.00,0.72 0.00,0.70 L0.00,0.60 C0.00,0.58 0.02,0.56 0.04,0.54 C0.02,0.52 0.00,0.50 0.00,0.48 L0.00,0.38 C0.00,0.36 0.02,0.34 0.04,0.32 C0.02,0.30 0.00,0.28 0.00,0.26 L0.00,0.16 C0.00,0.14 0.02,0.12 0.04,0.10 C0.02,0.08 0.00,0.06 0.00,0.04 L0.00,0.02 C0.00,0.00 0.02,0.00 0.02,0.00 Z" />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <div class="hero-bg-pattern"></div>
+    <div class="organic-blob organic-blob--1"></div>
+    <div class="organic-blob organic-blob--hero-1"></div>
+    <div class="organic-blob organic-blob--hero-2"></div>
+
+    <!-- Decorative organic strokes — left -->
+    <div class="deco-strokes deco-strokes--left" aria-hidden="true">
+        <svg viewBox="0 0 200 800" preserveAspectRatio="none">
+            <path d="M40,0 C120,80 20,160 80,240 C140,320 40,400 100,480 C160,560 60,640 120,720 C180,800 80,800 40,800" />
+            <path d="M80,40 C160,120 60,200 120,280 C180,360 80,440 140,520 C200,600 100,680 60,760 C20,840 120,840 80,840" stroke-width="1.5" />
+            <path d="M20,120 C100,200 0,280 60,360 C120,440 20,520 80,600 C140,680 40,760 100,840" stroke-width="1.5" />
+        </svg>
+    </div>
+
+    <!-- Decorative organic strokes — right -->
+    <div class="deco-strokes deco-strokes--right" aria-hidden="true">
+        <svg viewBox="0 0 200 800" preserveAspectRatio="none">
+            <path d="M160,0 C80,80 180,160 120,240 C60,320 160,400 100,480 C40,560 140,640 80,720 C20,800 120,800 160,800" />
+            <path d="M120,40 C40,120 140,200 80,280 C20,360 120,440 60,520 C0,600 100,680 140,760 C180,840 80,840 120,840" stroke-width="1.5" />
+            <path d="M180,100 C100,180 200,260 140,340 C80,420 180,500 120,580 C60,660 160,740 100,820" stroke-width="1.5" />
+        </svg>
+    </div>
+
+    <!-- Decorative French script -->
+    <span class="deco-script deco-script--lg" style="position:absolute; right:8%; top:15%; transform:rotate(-8deg);" aria-hidden="true">L'Écume des Jours</span>
+
+    <div class="hero-content">
+        <div class="hero-photo">
+            <picture>
+                <source srcset="{{ '/images/olya-avatar.webp' | relative_url }}" type="image/webp">
+                <img src="{{ '/images/olya-avatar.jpg' | relative_url }}" alt="Ольга Чумаченко" width="800" height="1067" loading="eager">
+            </picture>
+        </div>
+        <div class="hero-text">
+            <h1 class="hero-name">
+                <span class="hero-name-line">Ольга</span>
+                <span class="hero-name-line">Чумаченко</span>
+            </h1>
+            <p class="hero-role">Редактор · Дизайнер · Продакт</p>
+            <p class="hero-tagline">Создаю тексты, которые читают.<br>И дизайн, который запоминается.</p>
+            <a href="#portfolio" class="hero-cta">
+                <span>Смотреть портфолио</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- Torn Paper Divider -->
+<div class="torn-paper torn-paper--down"></div>

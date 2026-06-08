@@ -1,0 +1,51 @@
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">03</span>
+            <h2 class="section-title">Визуальное портфолио</h2>
+        </div>
+
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="dop">Интро</button>
+            <button class="filter-btn" data-filter="zine">Зины</button>
+            <button class="filter-btn" data-filter="journal">Журналы</button>
+            <button class="filter-btn" data-filter="book">Книги</button>
+            <button class="filter-btn" data-filter="poster">Постеры</button>
+            <button class="filter-btn" data-filter="merch">Мерч</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid">
+            {% for group in site.data.portfolio %}
+                {% for img in group.items %}
+                <div class="portfolio-item{% if group.tall and forloop.first %} portfolio-card--tall{% endif %}" data-category="{{ group.category }}">
+                    <div class="portfolio-card">
+                        <picture>
+                            <source srcset="{{ img.src | relative_url }}" type="image/webp">
+                            <img src="{{ img.fallback | relative_url }}" alt="{{ img.alt }}" loading="lazy">
+                        </picture>
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">
+                                {%- if group.category == 'dop' -%}
+                                    {{ img.title | default: group.title }}
+                                {%- else -%}
+                                    {{ group.title | default: img.alt }}
+                                {%- endif -%}
+                            </h3>
+                            <span class="portfolio-category">
+                                {%- if group.category == 'dop' -%}
+                                    {{ img.label | default: 'Допы' }}
+                                {%- else -%}
+                                    {{ group.category_label | default: group.category }}
+                                {%- endif -%}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Torn Paper Divider -->
+<div class="torn-paper torn-paper--up"></div>

@@ -1,0 +1,53 @@
+<section class="writing" id="writing">
+    <!-- Decorative organic strokes — left -->
+    <div class="deco-strokes deco-strokes--left" aria-hidden="true">
+        <svg viewBox="0 0 200 800" preserveAspectRatio="none">
+            <path d="M50,0 C130,90 30,180 90,270 C150,360 50,450 110,540 C170,630 70,720 30,800" />
+            <path d="M90,30 C170,120 70,210 130,300 C190,390 90,480 50,570 C10,660 110,750 90,800" stroke-width="1.5" />
+        </svg>
+    </div>
+
+    <!-- Decorative organic strokes — right -->
+    <div class="deco-strokes deco-strokes--right" aria-hidden="true">
+        <svg viewBox="0 0 200 800" preserveAspectRatio="none">
+            <path d="M150,0 C70,90 170,180 110,270 C50,360 150,450 90,540 C30,630 130,720 170,800" />
+            <path d="M110,30 C30,120 130,210 70,300 C10,390 110,480 170,570 C230,660 130,750 110,800" stroke-width="1.5" />
+        </svg>
+    </div>
+
+    <!-- Decorative French script -->
+    <span class="deco-script deco-script--sm" style="position:absolute; right:10%; top:8%; transform:rotate(-4deg);" aria-hidden="true">L'écume des jours</span>
+
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">04</span>
+            <h2 class="section-title">Тексты</h2>
+        </div>
+
+        <div class="writing-list" id="writing-list">
+            {% for item in site.data.writing %}
+            <article class="writing-item" data-expanded="false">
+                <div class="writing-header">
+                    <div class="writing-marker"></div>
+                    <div class="writing-content">
+                        <span class="writing-tag">{{ item.tag }}</span>
+                        <h3 class="writing-title">{{ item.title }}</h3>
+                        <p class="writing-excerpt">{{ item.excerpt }}</p>
+                    </div>
+                    <button class="writing-toggle" aria-label="Раскрыть текст">
+                        <span class="toggle-icon">+</span>
+                    </button>
+                </div>
+                <div class="writing-body">
+                    <div class="writing-text">
+                        {{ item.body }}
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Torn Paper Divider -->
+<div class="torn-paper torn-paper--down"></div>

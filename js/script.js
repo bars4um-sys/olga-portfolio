@@ -119,8 +119,8 @@
         const items = portfolioGrid.querySelectorAll('.portfolio-item');
         items.forEach(item => {
             const category = item.dataset.category;
-            const show = (filter === 'all' && category === 'all') ||
-                         (filter !== 'all' && category === filter);
+            const show = (filter === 'dop' && category === 'dop') ||
+                         (filter !== 'dop' && category === filter);
 
             if (show) {
                 item.classList.remove('hidden');
@@ -144,8 +144,8 @@
         });
     });
 
-    // Auto-apply "all" filter on page load
-    applyFilter('all');
+    // Auto-apply "dop" filter on page load
+    applyFilter('dop');
 
     // Reset any stale transforms — all items should be flat now
     document.querySelectorAll('.portfolio-item').forEach(item => {
