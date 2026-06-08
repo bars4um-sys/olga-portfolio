@@ -3,9 +3,10 @@ description: "Портфолио Ольги Чумаченко — редакт�
 author: "Ольга Чумаченко"
 
 # Деплой: GitHub Pages, репо bars4um-sys/olga-portfolio
-# По умолчанию сайт откроется на https://bars4um-sys.github.io/olga-portfolio/
-# Если переезжаешь на кастомный домен — раскомментируй baseurl и url
-baseurl: ""
+# Сайт открывается на https://bars4um-sys.github.io/olga-portfolio/
+# baseurl обязателен — иначе все ссылки (css/js/images) идут от корня
+# домена GitHub и отдают 404.
+baseurl: "/olga-portfolio"
 url: "https://bars4um-sys.github.io"
 
 # Не собирать эти файлы в _site (они не нужны в продакшене)
