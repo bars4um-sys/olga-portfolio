@@ -392,16 +392,14 @@ button {
 
 .hero-photo {
     position: relative;
-    width: 340px;
-    /* Высота рамки: было 418. Сейчас 585 — это 418 + 20% (≈84) сверху + 10% (≈42) снизу.
-       Реальный bounding box увеличен, clip-path (#wavy-oval) растягивается
-       под него, рамка становится выше. */
-    height: 585px;
-    flex: 0 0 38%;
-    max-width: 480px;
+    /* Bounding box 473×501 — ширина +10% (от 430), высота -5% (от 527).
+       Пропорция ~1:1.06. flex-basis задаёт точный размер, width не нужен. */
+    flex: 0 0 473px;
+    max-width: 552px;
+    height: 501px;
     margin-left: 48px;
-    margin-top: -55px;  /* компенсируем увеличенную высоту: «растём» вверх */
-    margin-bottom: 42px; /* и чуть вниз, чтобы низ тоже добавил «воздух» */
+    margin-top: -29px;  /* выровнено по низу кнопки .hero-cta */
+    margin-bottom: 40px;
     filter: drop-shadow(0 12px 28px rgba(118, 84, 76, 0.18));
     clip-path: url(#wavy-oval);
     background: var(--lotus-powder);
@@ -443,8 +441,11 @@ button {
     height: 100%;
     display: block;
     object-fit: cover;
-    /* Фото теперь точно под рамку 340×585 (пропорции 1:1.72) — сдвиг не нужен */
-    object-position: center center;
+    /* Фото 391×585 вписано в bounding box 430×527. cover берёт меньшую сторону
+       (высоту) → фото увеличивается на ~22% по ширине и обрезается по бокам.
+       Сдвигаем фокус вверх, чтобы лицо попало в верхнюю треть овала,
+       а низ (таз/ноги) ушёл за обрез → Оля визуально мельче. */
+    object-position: center 10%;
 }
 
 .hero-text {
