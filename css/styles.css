@@ -1818,8 +1818,16 @@ button {
 
     .hero-photo {
         order: -1;
+        /* Сброс десктопного flex-basis 473px и фикс. высоты 501px,
+           иначе на мобиле фото остаётся 473×501 (только ширина обрезается
+           max-width), и волнистый овал вытягивается/уезжает. */
+        flex: 0 0 auto;
+        width: 100%;
         max-width: 280px;
+        height: auto;
+        aspect-ratio: 473 / 501;  /* сохраняем портретные пропорции рамки */
         margin-left: 0;
+        margin-top: 0;
     }
 
     .hero-photo::before {
@@ -1879,6 +1887,7 @@ button {
 
     .hero-photo {
         max-width: 220px;
+        margin: 0 auto;  /* центрируем в колонке */
     }
 
     .hero-name {
@@ -1965,10 +1974,6 @@ button {
         flex-direction: column;
         gap: 16px;
         text-align: center;
-    }
-
-    .hero-photo {
-        margin-left: 0;
     }
 
     .contact-buttons {
