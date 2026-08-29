@@ -1456,6 +1456,10 @@ button {
     border-bottom: 1px solid var(--color-border);
 }
 
+.contact-block--hidden {
+    display: none !important;
+}
+
 .contact-label {
     font-family: var(--font-body);
     font-size: 11px;
