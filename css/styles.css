@@ -1508,6 +1508,17 @@ button {
     color: rgba(218, 203, 183, 0.6);
 }
 
+.footer-text a {
+    color: rgba(218, 203, 183, 0.8);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+    color: var(--color-bg);
+}
+
 .footer-social {
     display: flex;
     gap: 24px;
